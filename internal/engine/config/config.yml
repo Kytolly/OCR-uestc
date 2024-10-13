@@ -1,0 +1,4 @@
+coding: 'utf-8'
+stdHeight: 100
+serverHost: 'tcp://*:'
+tcpPort: '5555'
