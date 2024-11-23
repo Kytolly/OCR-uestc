@@ -1,27 +1,23 @@
 import time
 import zmq
-from setting.load import serverHost, tcpPort, coding
-from model.getImg import inputToImg 
-from model.getText import getText
+import setting as st 
+from filter.gray import *
+from filter.edge import *
+from filter.transform import * 
+from handler.source_easyocr import *
+from input.input import *
+
 
 def server():
-    # 创建ZMQ套接字
     context = zmq.Context()
     socket = context.socket(zmq.REP)
-    socket.bind(serverHost + tcpPort)
-
+    socket.bind(st.serverHost + st.tcpPort)
     while True:
-        #  等待客户端的请求
-        message = socket.recv()
-        # print(f"Received request: {message}")
+        input_data = socket.recv()
+        input_obj = Input.deserialize(input_data)
+        
+        output_obj = Handler_easyocr().handle(input_obj)
 
-        #  Do some 'work'
-        # time.sleep(1)
-        # print("processing the message...")
-        img = inputToImg(message)
-        text = getText(img)
-        res = text.encode(coding)
-
-        #  响应数据发送给客户端
-        socket.send(res)
-        # print(f"Sent response: {res}")
+        output_data = output_obj.serialize()
+        socket.send(output_data)
+        

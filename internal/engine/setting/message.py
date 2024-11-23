@@ -1,0 +1,15 @@
+global SUCCESS, ERROR
+
+SUCCESS = 100
+
+ERROR = 500
+
+# 识别模块错误:1000+xx
+ERROR_OCR = 1001
+
+# 输出模块错误:2000+xx
+ERROR_OUTPUT_EMPTY = 2001
+
+# 格式码：<10
+FORMAT_NONE = 0
+FORMAT_JSON = 1
