@@ -41,6 +41,7 @@ endif()
 # _directory_contents at /home/kytolly/QtIDE/6.7.2/gcc_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/kytolly/Project/PythonProject/OCR-uestc/internal/frontend/*.cpp")
 set(OLD_GLOB
+  "/home/kytolly/Project/PythonProject/OCR-uestc/internal/frontend/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp"
   "/home/kytolly/Project/PythonProject/OCR-uestc/internal/frontend/build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp"
   "/home/kytolly/Project/PythonProject/OCR-uestc/internal/frontend/build/Desktop_Qt_6_7_2-Debug/CMakeFiles/3.29.3/CompilerIdCXX/CMakeCXXCompilerId.cpp"
   "/home/kytolly/Project/PythonProject/OCR-uestc/internal/frontend/build/Desktop_Qt_6_7_2-Debug/frontend_autogen/EWIEGA46WW/moc_mainwindow.cpp"
