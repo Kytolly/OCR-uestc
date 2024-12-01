@@ -2,10 +2,9 @@ import zmq
 import setting as st
 from input.input import *
 
-cilientHost = "tcp://localhost:"
-# imgPath = '/home/kytolly/Project/PythonProject/OCR-uestc/internal/engine/cache/image3.png'
-# imgPath = "D:/Desktop/myfile/UESTC-courses/Grade5/软件工程/OCR-uestc/internal/engine/cache/test.pdf"
-imgPath = "cache/test.pdf"
+cilientHost = "tcp://localhost:" 
+imgPath = 'D:/Desktop/myfile/draft/OCR-uestc/internal/engine/cache/image3.png'
+# imgPath = "cache/test.pdf"
 
 def TestCilient():
     context = zmq.Context()

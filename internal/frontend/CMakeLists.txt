@@ -11,8 +11,10 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets LinguistTools)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets LinguistTools)
+
 #find cppzmq wrapper, installed by make of cppzmq
 find_package(cppzmq)
+target_link_libraries(frontend cppzmq)
 
 set(TS_FILES frontend_zh_CN.ts)
 
@@ -68,8 +70,6 @@ set_target_properties(frontend PROPERTIES
     MACOSX_BUNDLE TRUE
     WIN32_EXECUTABLE TRUE
 )
-#target_link_libraries(frontend cppzmq)
-target_link_libraries(frontend PRIVATE cppzmq)
 
 include(GNUInstallDirs)
 install(TARGETS frontend

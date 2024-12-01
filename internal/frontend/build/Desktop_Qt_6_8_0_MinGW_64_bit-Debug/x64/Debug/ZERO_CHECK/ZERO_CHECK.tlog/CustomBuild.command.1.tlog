@@ -1,0 +1,10 @@
+^D:\DESKTOP\MYFILE\UESTC-COURSES\GRADE5\软件工程\OCR-UESTC\INTERNAL\FRONTEND\BUILD\DESKTOP_QT_6_8_0_MINGW_64_BIT-DEBUG\CMAKEFILES\41C06A449429A1547F03C2414D159A6C\GENERATE.STAMP.RULE
+setlocal
+D:\QtCreator\Tools\CMake_64\bin\cmake.exe -SD:/Desktop/myfile/UESTC-courses/Grade5/软件工程/OCR-uestc/internal/frontend -BD:/Desktop/myfile/UESTC-courses/Grade5/软件工程/OCR-uestc/internal/frontend/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/Desktop/myfile/UESTC-courses/Grade5/软件工程/OCR-uestc/internal/frontend/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/frontend.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
