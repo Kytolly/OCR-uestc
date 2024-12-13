@@ -1,5 +1,6 @@
 {
     "files.associations": {
         "iostream": "cpp"
-    }
+    },
+    "cmake.sourceDirectory": "D:/My_Py/Project/OCR-uestc/internal/frontend"
 }

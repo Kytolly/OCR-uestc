@@ -10,6 +10,9 @@ import shutil
 from urllib.parse import urlparse
 import os
 
+def getDirofThisExcutable():
+    return os.getcwd()
+
 class Handler_easyocr():
     def __init__(self):
         self.OCR_reader = easyocr.Reader(
@@ -20,6 +23,13 @@ class Handler_easyocr():
         )
     
     def handle(self, i: Input):
+        paths = self.getImagePaths(i)
+        results = []
+        for p in paths:
+            p = os.path.join(getDirofThisExcutable(), p)
+            result = self.OCR_reader.readtext(p, detail=1)
+            for r in result:
+                results.append(r)
         out = Output(
                 oId=now_time_string(i.hash_name()),
                 statusOK=False,
@@ -47,7 +57,7 @@ class Handler_easyocr():
         if urlparse(input_path).scheme in ('http', 'https'):
             input_path = self.download(input_path)
 
-        if input_path.lower().endswith(('.png')):
+        if input_path.lower().endswith(('.png', '.jpg', '.jpeg', '.bmp', '.tiff', '.gif')):
             output_path = os.path.join(cache_path, f"{i.hash_name()}.png")
             shutil.copyfile(input_path, output_path)
             paths.append(output_path)

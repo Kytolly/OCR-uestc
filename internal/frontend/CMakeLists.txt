@@ -13,8 +13,13 @@ find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets LinguistTools)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets LinguistTools)
 
 #find cppzmq wrapper, installed by make of cppzmq
+<<<<<<< Updated upstream
 find_package(cppzmq)
 target_link_libraries(frontend cppzmq)
+=======
+# find_package(cppzmq)
+include(D:/My_C/project/libzmq/build/ZeroMQConfig.cmake)
+>>>>>>> Stashed changes
 
 set(TS_FILES frontend_zh_CN.ts)
 
@@ -70,6 +75,16 @@ set_target_properties(frontend PROPERTIES
     MACOSX_BUNDLE TRUE
     WIN32_EXECUTABLE TRUE
 )
+<<<<<<< Updated upstream
+=======
+#target_link_libraries(frontend cppzmq)
+
+include_directories(D:/My_C/project/libzmq/include)
+link_directories(D:/My_C/project/libzmq/build/lib)
+# link_directories(D:/My_C/project/libzmq/build/bin)
+
+target_link_libraries(frontend PRIVATE libzmq)
+>>>>>>> Stashed changes
 
 include(GNUInstallDirs)
 install(TARGETS frontend

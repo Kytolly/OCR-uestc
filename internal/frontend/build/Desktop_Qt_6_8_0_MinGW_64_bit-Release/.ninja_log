@@ -1,0 +1,20 @@
+# ninja log v6
+39	425	7499964957556533	D:/My_Py/Project/OCR-uestc/internal/frontend/build/Desktop_Qt_6_8_0_MinGW_64_bit-Release/CMakeFiles/cmake.verify_globs	c26869bf00fb0781
+2618	5136	7499964348946120	CMakeFiles/frontend.dir/frontend_autogen/mocs_compilation.cpp.obj	671c303d9e9501a7
+438	2651	7499964981587632	frontend_autogen/timestamp	895d591ad6e02016
+438	2651	7499964981587632	frontend_autogen/mocs_compilation.cpp	895d591ad6e02016
+438	2651	7499964981587632	D:/My_Py/Project/OCR-uestc/internal/frontend/build/Desktop_Qt_6_8_0_MinGW_64_bit-Release/frontend_autogen/timestamp	895d591ad6e02016
+438	2651	7499964981587632	D:/My_Py/Project/OCR-uestc/internal/frontend/build/Desktop_Qt_6_8_0_MinGW_64_bit-Release/frontend_autogen/mocs_compilation.cpp	895d591ad6e02016
+454	2640	7499965121234431	build.ninja	372cf666665db91b
+2730	5306	7499964350067521	CMakeFiles/frontend.dir/main.cpp.obj	3a56325efb748c6e
+2893	5594	7499964351706266	CMakeFiles/frontend.dir/mainwindow.cpp.obj	c0b61945ad2447af
+3085	5636	7499964353616417	CMakeFiles/frontend.dir/worker.cpp.obj	d6f046618537b13e
+5636	6214	7499964379131982	frontend.exe	e1f68c42f36a26ba
+29	415	7499965186985246	D:/My_Py/Project/OCR-uestc/internal/frontend/build/Desktop_Qt_6_8_0_MinGW_64_bit-Release/CMakeFiles/cmake.verify_globs	c26869bf00fb0781
+429	2502	7499965209644147	frontend_autogen/timestamp	895d591ad6e02016
+429	2502	7499965209644147	frontend_autogen/mocs_compilation.cpp	895d591ad6e02016
+429	2502	7499965209644147	D:/My_Py/Project/OCR-uestc/internal/frontend/build/Desktop_Qt_6_8_0_MinGW_64_bit-Release/frontend_autogen/timestamp	895d591ad6e02016
+429	2502	7499965209644147	D:/My_Py/Project/OCR-uestc/internal/frontend/build/Desktop_Qt_6_8_0_MinGW_64_bit-Release/frontend_autogen/mocs_compilation.cpp	895d591ad6e02016
+2503	4629	7499965211718443	CMakeFiles/frontend.dir/frontend_autogen/mocs_compilation.cpp.obj	671c303d9e9501a7
+2612	4888	7499965212810578	CMakeFiles/frontend.dir/mainwindow.cpp.obj	c0b61945ad2447af
+4888	5440	7499965235562580	frontend.exe	e1f68c42f36a26ba

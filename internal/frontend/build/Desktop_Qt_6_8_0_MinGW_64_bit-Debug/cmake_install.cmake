@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 # Install script for directory: D:/Desktop/myfile/UESTC-courses/Grade5/软件工程/OCR-uestc/internal/frontend
+=======
+# Install script for directory: D:/My_Py/Project/OCR-uestc/internal/frontend
+>>>>>>> Stashed changes
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -12,7 +16,11 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
+<<<<<<< Updated upstream
     set(CMAKE_INSTALL_CONFIG_NAME "Release")
+=======
+    set(CMAKE_INSTALL_CONFIG_NAME "Debug")
+>>>>>>> Stashed changes
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -32,6 +40,7 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
+<<<<<<< Updated upstream
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
     file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "D:/Desktop/myfile/UESTC-courses/Grade5/软件工程/OCR-uestc/internal/frontend/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/Debug/frontend.exe")
@@ -41,6 +50,20 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "D:/Desktop/myfile/UESTC-courses/Grade5/软件工程/OCR-uestc/internal/frontend/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/MinSizeRel/frontend.exe")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
     file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "D:/Desktop/myfile/UESTC-courses/Grade5/软件工程/OCR-uestc/internal/frontend/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/RelWithDebInfo/frontend.exe")
+=======
+# Set default install directory permissions.
+if(NOT DEFINED CMAKE_OBJDUMP)
+  set(CMAKE_OBJDUMP "C:/Qt/Tools/mingw1310_64/bin/objdump.exe")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "D:/My_Py/Project/OCR-uestc/internal/frontend/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/frontend.exe")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/frontend.exe" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/frontend.exe")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "C:/Qt/Tools/mingw1310_64/bin/strip.exe" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/frontend.exe")
+    endif()
+>>>>>>> Stashed changes
   endif()
 endif()
 
@@ -52,5 +75,9 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
+<<<<<<< Updated upstream
 file(WRITE "D:/Desktop/myfile/UESTC-courses/Grade5/软件工程/OCR-uestc/internal/frontend/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/${CMAKE_INSTALL_MANIFEST}"
+=======
+file(WRITE "D:/My_Py/Project/OCR-uestc/internal/frontend/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/${CMAKE_INSTALL_MANIFEST}"
+>>>>>>> Stashed changes
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

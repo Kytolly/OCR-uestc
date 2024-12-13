@@ -14,11 +14,13 @@ class Server():
         self.socket.bind(st.serverHost + st.tcpPort)
         
     def run(self):
-        while True:
+        while True: 
             input_data = self.socket.recv()
+            print(f"Received request: {input_data}")
             input_obj = Input.deserialize(input_data)
             
             output_obj = Handler_easyocr().handle(input_obj)
 
             output_data = output_obj.serialize()
             self.socket.send(output_data)
+            print(f"Sent reply: {output_data}")

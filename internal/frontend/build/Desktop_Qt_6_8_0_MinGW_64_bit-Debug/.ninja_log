@@ -1,0 +1,10 @@
+# ninja log v6
+314	2370	7499934726805299	build.ninja	6d7eeacad1e7d3fa
+37	329	7499934705200616	D:/My_Py/Project/OCR-uestc/internal/frontend/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	f598a83f643ca733
+336	2161	7499931454814860	frontend_autogen/timestamp	40fa90e249bc203d
+336	2161	7499931454814860	frontend_autogen/mocs_compilation.cpp	40fa90e249bc203d
+336	2161	7499931454814860	D:/My_Py/Project/OCR-uestc/internal/frontend/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/frontend_autogen/timestamp	40fa90e249bc203d
+336	2161	7499931454814860	D:/My_Py/Project/OCR-uestc/internal/frontend/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/frontend_autogen/mocs_compilation.cpp	40fa90e249bc203d
+330	2598	7499934726805299	build.ninja	6d7eeacad1e7d3fa
+31	307	7499934729276583	D:/My_Py/Project/OCR-uestc/internal/frontend/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	f598a83f643ca733
+25	321	7499935014737990	D:/My_Py/Project/OCR-uestc/internal/frontend/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	f598a83f643ca733

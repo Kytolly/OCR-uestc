@@ -3,7 +3,7 @@
 
 #include <QObject>
 #include <QString>
-#include <zmq.hpp>
+#include "zmq.hpp"
 #include <thread>
 #include <mutex>
 #include <condition_variable>
